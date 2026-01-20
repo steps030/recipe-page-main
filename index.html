@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blaues Farbschema</title>
+    <style>
+      :root {
+        /* Modernes Blau-Spektrum (hell -> dunkel) - max. 5 Farben */
+        --blue-100: hsl(210 100% 96%); /* sehr hell */
+        --blue-300: hsl(210 90% 80%); /* hell */
+        --blue-500: hsl(210 90% 60%); /* mittel */
+        --blue-700: hsl(210 75% 40%); /* dunkel */
+        --blue-900: hsl(210 60% 20%); /* sehr dunkel */
+
+        /* optionale Hilfsfarben */
+        --bg: var(--blue-100);
+        --text: hsl(210 10% 8%);
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          Roboto,
+          'Helvetica Neue',
+          Arial;
+        background: var(--bg);
+        color: var(--text);
+        padding: 2rem;
+      }
+
+      .palette {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+      .swatch {
+        width: 120px;
+        height: 88px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 700;
+        box-shadow: 0 6px 18px rgba(12, 24, 40, 0.08);
+      }
+      .swatch--100 {
+        background: var(--blue-100);
+        color: hsl(210 10% 18%);
+      }
+      .swatch--300 {
+        background: var(--blue-300);
+      }
+      .swatch--500 {
+        background: var(--blue-500);
+      }
+      .swatch--700 {
+        background: var(--blue-700);
+      }
+      .swatch--900 {
+        background: var(--blue-900);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Blaues Farbschema (5 Farben)</h1>
+    <div class="palette">
+      <div class="swatch swatch--100">100</div>
+      <div class="swatch swatch--300">300</div>
+      <div class="swatch swatch--500">500</div>
+      <div class="swatch swatch--700">700</div>
+      <div class="swatch swatch--900">900</div>
+    </div>
+  </body>
+</html>

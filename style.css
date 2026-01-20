@@ -1,0 +1,55 @@
+/* Modernes Farbschema als CSS-Variablen */
+:root{
+  /* Primär- und Akzentfarben */
+  --color-primary: hsl(222 88% 56%);         /* kühles Blau */
+  --color-primary-foreground: hsl(210 16% 98%);
+  --color-secondary: hsl(275 65% 52%);       /* sanftes Violett */
+  --color-accent: hsl(28 94% 59%);           /* warmes Korall-Orange */
+
+  /* Feedbackfarben */
+  --color-success: hsl(144 48% 46%);
+  --color-warning: hsl(34 100% 50%);
+  --color-danger: hsl(352 74% 55%);
+
+  /* Neutralfarben */
+  --color-bg: hsl(0 0% 98%);                 /* Seitenhintergrund (hell) */
+  --color-surface: hsl(0 0% 100%);           /* Karten, Panels */
+  --color-muted: hsl(220 14% 60%);           /* sekundärer Text, Icons */
+  --color-text: hsl(220 12% 12%);            /* Primärer Text */
+  --color-inverse-text: hsl(0 0% 100%);
+
+  /* Ränder, Schatten, Glas */
+  --color-border: hsl(220 12% 92%);
+  --shadow: 0 10px 30px hsla(220,12%,18%,0.08);
+  --glass: rgba(255,255,255,0.6);
+
+  /* Utility */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --focus-ring: 0 0 0 4px hsl(222 88% 56% / 12%);
+
+  /* Verläufe */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+}
+
+/* Dunkles Schema */
+@media (prefers-color-scheme: dark){
+  :root{
+    --color-bg: hsl(220 15% 10%);
+    --color-surface: hsl(220 12% 12%);
+    --color-text: hsl(210 15% 96%);
+    --color-muted: hsl(210 10% 70%);
+    --color-border: hsl(220 14% 16%);
+    --shadow: 0 12px 40px hsla(220,12%,8%,0.6);
+    --glass: rgba(10,12,20,0.5);
+    --focus-ring: 0 0 0 4px hsl(222 88% 56% / 28%);
+  }
+}
+
+/* Komfort-Farben mit Alphakanal (Beispiele) */
+:root{
+  --primary-100: hsl(222 88% 56% / 0.08);
+  --primary-200: hsl(222 88% 56% / 0.16);
+  --muted-100: hsl(220 14% 60% / 0.06);
+}
