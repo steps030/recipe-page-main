@@ -101,9 +101,3 @@ Füge hier Screenshots ein, um das Ergebnis zu dokumentieren. Beispiel-Markup zu
 ```markdown
 ![Mobile view](assets/images/screenshot-mobile.png) ![Desktop view](assets/images/screenshot-desktop.png)
 ```
-
-Lege die Bilddateien unter `assets/images/` ab und passe die Dateinamen in der README an.
-
----
-
-Wenn du möchtest, kann ich die Screenshot-Platzhalter hinzufügen oder den Live-Demo-Link nach dem Deployment automatisch einsetzen.
