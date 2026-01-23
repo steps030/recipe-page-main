@@ -1,0 +1,62 @@
+:root {
+  /* Farben aus style-guide.md */
+  --color-white: hsl(0, 0%, 100%);
+
+  --color-stone-100: hsl(30, 54%, 90%);
+  --color-stone-150: hsl(30, 18%, 87%);
+  --color-stone-600: hsl(30, 10%, 34%);
+  --color-stone-900: hsl(24, 5%, 18%);
+
+  --color-brown-800: hsl(14, 45%, 36%);
+
+  --color-rose-800: hsl(332, 51%, 32%);
+  --color-rose-50: hsl(330, 100%, 98%);
+
+  /* Typografie (aus style-guide.md — Body Copy & Fonts) */
+  --font-size-body: 16px;
+
+  --font-family-young-serif: 'Young Serif', serif;
+  --font-weight-young-serif: 400;
+
+  --font-family-outfit:
+    'Outfit', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-weight-outfit-regular: 400;
+  --font-weight-outfit-medium: 600;
+  --font-weight-outfit-bold: 700;
+}
+
+/* Universal CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family-outfit);
+  font-size: var(--font-size-body);
+}
+
+.recipe__card {
+  width: 375px;
+}
+
+.recipe__header {
+  margin-bottom: 2rem;
+}
+
+.recipe__img {
+  width: 100%;
+}
+
+.recipe__headline {
+  font-family: var(--font-family-young-serif);
+  font-size: 4rem;
+  font-weight: var(--font-weight-young-serif);
+}

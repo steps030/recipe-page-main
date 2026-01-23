@@ -13,10 +13,25 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png" />
 
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet" />
+
     <title>Frontend Mentor | Recipe page</title>
+
+    <link
+      rel="stylesheet"
+      href="./style.css" />
   </head>
   <body>
-    <div class="recipe__card">
+    <article class="recipe__card">
       <header class="recipe__header">
         <img
           class="recipe__img"
@@ -25,11 +40,12 @@
       </header>
       <main class="recipe__content">
         <h1 class="recipe__headline">Simple Omelette Recipe</h1>
-        <p class="recipe__descrption"
+        <p class="recipe__description"
           >An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs
           cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.
         </p>
-        <section class="recipe__preparation">
+
+        <section class="preparation">
           <h3 class="preparation__title">Preparation time</h3>
           <ul class="preparation__list">
             <li class="preparation__list-item"><strong>Total:</strong>Approximately 10 minutes</li>
@@ -37,7 +53,8 @@
             <li class="preparation__list-item"><strong>Cooking:</strong>5 minutes </li>
           </ul>
         </section>
-        <section class="recipe__ingredients">
+
+        <section class="ingredients">
           <h2 class="ingredients__title">Ingredients</h2>
           <ul class="ingredients__list">
             <li class="ingredients__list-item">2-3 large eggs</li>
@@ -49,7 +66,8 @@
             >
           </ul>
         </section>
-        <section class="recipe__instructions">
+
+        <section class="instructions">
           <h2 class="instructions__title">Instructions</h2>
           <ol class="instructions__list">
             <li class="instructions__list-item"
@@ -77,12 +95,13 @@
             >
           </ol>
         </section>
-        <section class="recipe__nutrition">
+
+        <section class="nutrition">
           <h2 class="nutrition__title">Nutrition</h2>
           <p class="nutrition__description">
             The table below shows nutritional values per serving without the additional fillings.
           </p>
-          <table class="recipe__nutrition-table">
+          <table class="nutrition-table">
             <tbody class="nutrition-table__body">
               <tr class="nutrition-table__row">
                 <td class="nutrition-table__label">Calories</td>
@@ -104,6 +123,6 @@
           </table>
         </section>
       </main>
-    </div>
+    </article>
   </body>
 </html>

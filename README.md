@@ -1,89 +1,109 @@
-# Frontend Mentor - Recipe page
+# Recipe Page — Frontend Mentor
 
-![Design preview for the Recipe page coding challenge](./preview.jpg)
+Kurze, responsive Umsetzung der Frontend-Mentor-Challenge "Recipe Page". Dieses Repository enthält ein statisches HTML/CSS-Projekt mit Design- und Styleguide-Datei.
 
-## Welcome! 👋
+**Inhalt dieser README**
 
-Thanks for checking out this front-end coding challenge.
+- Projektübersicht
+- Technologien
+- Installation & lokale Vorschau
+- Benutzung / Demo
+- Projektstruktur
+- Design & Styleguide
+- Fonts & Assets
+- Entwicklung & Contribution
+- Tests & Accessibility
+- Lizenz & Kontakt
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Projekt
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+Dieses Projekt ist eine statische Beispielimplementierung einer Rezeptseite basierend auf dem Design von Frontend Mentor. Ziel ist es, Layout, Typografie und Farben gemäß Styleguide umzusetzen und responsiv zu gestalten.
 
-## The challenge
+## Technologien
 
-Your challenge is to build out this recipe page and get it looking as close to the design as possible.
+- HTML5
+- CSS3
+- (optional) VS Code Live Server für lokale Entwicklung
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+## Installation & lokale Vorschau
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+1. Repository klonen:
 
-## Where to find everything
+```bash
+git clone https://github.com/steps030/recipe-page-main.git
+cd recipe-page-main
+```
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+2. Lokale Vorschau öffnen:
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Datei `index.html` im Browser öffnen
+- Oder in VS Code die Erweiterung **Live Server** verwenden und `index.html` starten
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## Benutzung / Demo
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+Die Seite ist statisch — Inhalte können direkt in `index.html` oder in den CSS-Dateien angepasst werden. Verwende die Entwicklertools des Browsers, um das responsive Verhalten bei verschiedenen Viewport-Breiten zu prüfen.
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+## Projektstruktur
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- `index.html` — Hauptseite
+- `style.css` — zentrale Styles (enthält CSS-Variablen und Layout)
+- `style-guide.md` — Design-Styleguide (Farben, Typografie, Layoutgrößen)
+- `assets/` — Bilder, Fonts und weitere statische Ressourcen
+  - `assets/fonts/` — eingebettete Schriftdateien
+  - `assets/images/` — verwendete Bilder
 
-## Building your project
+## Design & Styleguide
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+Siehe `style-guide.md` für Farben (HSL-Werte), Typografie und Layoutgrößen (Mobile: 375px, Desktop: 1440px). Die Datei ist die Referenz für alle visuellen Entscheidungen.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+## Fonts & Assets
 
-## Deploying your project
+Verwendete Schriftfamilien:
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+- Young Serif (Serif) — Gewicht 400
+- Outfit (Sans) — Gewichte 400, 600, 700
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+Die Fonts liegen in `assets/fonts/` (lokale Dateien). Falls du Google Fonts bevorzugst, kannst du die entsprechenden `link`-Tags in `index.html` ergänzen.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+## Entwicklung & Contribution
 
-## Create a custom `README.md`
+- Änderungen lokal vornehmen und per Pull Request vorschlagen
+- Branching: `main` ist der Standardbranch; feature-Branches nach Bedarf
+- Code-Stil: keine speziellen Linter konfiguriert — halte HTML/CSS semantisch und gut strukturiert
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+## Tests & Accessibility
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+- Prüfe Responsiveness (DevTools, verschiedene Viewport-Breiten)
+- Farbkontrast beachten (WCAG) — `style-guide.md` enthält die Design-Farben
+- Semantische HTML-Elemente und aussagekräftige `alt`-Attribute für Bilder verwenden
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+## Lizenz & Kontakt
 
-## Submitting your solution
+Dieses Repository kann unter der MIT-Lizenz stehen (bitte gewünschte Lizenz ergänzen).
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+- Autor: steps030 (GitHub)
+- Kontakt: https://github.com/steps030
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+---
 
-## Sharing your solution
+Ich habe eine MIT-Lizenz-Datei (`LICENSE`) im Projekt angelegt.
 
-There are multiple places you can share your solution:
+## Live Demo
 
-1. Share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+Aktuelle Deployment-URL (Platzhalter): https://your-username.github.io/recipe-page-main
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+Hinweis: Ersetze den Platzhalter durch den tatsächlichen Link, sobald die Challenge deployed ist.
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+## Screenshots
 
-## Got feedback for us?
+Füge hier Screenshots ein, um das Ergebnis zu dokumentieren. Beispiel-Markup zum Einfügen in diese README:
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+```markdown
+![Mobile view](assets/images/screenshot-mobile.png) ![Desktop view](assets/images/screenshot-desktop.png)
+```
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+Lege die Bilddateien unter `assets/images/` ab und passe die Dateinamen in der README an.
 
-**Have fun building!** 🚀
+---
+
+Wenn du möchtest, kann ich die Screenshot-Platzhalter hinzufügen oder den Live-Demo-Link nach dem Deployment automatisch einsetzen.
