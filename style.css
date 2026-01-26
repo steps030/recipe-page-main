@@ -42,8 +42,10 @@ body {
   font-family: var(--font-family-outfit);
   font-size: var(--font-size-body);
   background-color: var(--color-stone-100);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 li::marker {
@@ -60,7 +62,6 @@ li::marker {
 @media (min-width: 768px) {
   .recipe__card {
     max-width: 768px;
-    margin: 6rem 0;
     border-radius: 2.4rem;
     padding: 3rem;
   }
@@ -205,12 +206,14 @@ li::marker {
 
 .nutrition-table {
   width: 100%;
-  border-collapse: collapse;
+  table-layout: fixed;
+  word-break: break-all;
 }
 
 .nutrition-table__label,
 .nutrition-table__value {
   border-bottom: 1px solid var(--color-stone-100);
+  width: 50%;
 }
 
 .nutrition-table__row:last-child .nutrition-table__label {
